@@ -1,0 +1,19 @@
+.container-title {
+  background: url("https://picsum.photos/1920/400?random=1") no-repeat center
+    center / cover;
+}
+.breadcrumb {
+  padding: 15px;
+}
+.path {
+  background-color: #ccc;
+  .breadcrumb {
+    background-color: transparent;
+  }
+}
+
+.main-footer {
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+}

@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pzjw8f+uaCm3yNV9h+g8z9w+lE+J9sYKX5s9xQevFlbz16m1f2j9FjpX7f6fP9fP"
+      crossorigin="anonymous"
+    ></script>
+    <!------------------------------>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#naoki-block" class="nav-link" data-bs-toggle="modal"
+                >登入</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!--最上方導覽列-->
+
+    <!-- <button type="button" class="btn btn-primary"  data-bs-target="">
+      Launch demo modal
+    </button> -->
+
+    <!-- <div class="container-fluid container-title">
+      <div class="row">
+        <div class="col-12 text-left py-5">
+          <div class="display-4 fw-bold">Fuluid Container</div>
+          <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+        </div>
+      </div>
+    </div> -->
+    <!--最上方Title-->
+
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://picsum.photos/1200/400?random=30"
+            class="d-block w-100"
+            alt=""
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Title</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://picsum.photos/1200/400?random=27"
+            class="d-block w-100"
+            alt=""
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Title</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://picsum.photos/1200/400?random=31"
+            class="d-block w-100"
+            alt=""
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Title</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!--幻燈圖片-->
+
+    <div class="path">
+      <div class="container">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item"><a href="#">Library</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Data</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+    <!--麵包削-->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-3">
+          <div class="list-group">
+            <a
+              href="#"
+              class="list-group-item list-group-item-action active"
+              aria-current="true"
+            >
+              The current link item
+            </a>
+            <a href="#" class="list-group-item list-group-item-action"
+              >A second link item</a
+            >
+            <a href="#" class="list-group-item list-group-item-action"
+              >A third link item</a
+            >
+            <a href="#" class="list-group-item list-group-item-action"
+              >A fourth link item</a
+            >
+            <a
+              class="list-group-item list-group-item-action disabled"
+              aria-disabled="true"
+              >A disabled link item</a
+            >
+          </div>
+        </div>
+        <!--連結列表-->
+        <div class="col-12 col-md-9">
+          <h1>Title</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum,
+            rem laboriosam. Sit quam voluptates obcaecati rerum repudiandae
+            minus quod tenetur omnis, neque ab voluptatibus exercitationem earum
+            delectus numquam fuga ratione.
+          </p>
+          <div class="row">
+            <div class="col-12 col-md-3">
+              <div class="item">
+                <img
+                  src="https://picsum.photos/300/200?random=1"
+                  class="img-fluid"
+                />
+                <h3>Title</h3>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut
+                  incidunt temporibus nulla adipisci quo cumque, amet fuga. At
+                  quidem, optio illum, debitis veritatis ut vitae tempore
+                  aspernatur accusantium id amet?
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-md-3">
+              <div class="item">
+                <img
+                  src="https://picsum.photos/300/200?random=2"
+                  class="img-fluid"
+                />
+                <h3>Title</h3>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut
+                  incidunt temporibus nulla adipisci quo cumque, amet fuga. At
+                  quidem, optio illum, debitis veritatis ut vitae tempore
+                  aspernatur accusantium id amet?
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-md-3">
+              <div class="item">
+                <img
+                  src="https://picsum.photos/300/200?random=3"
+                  class="img-fluid"
+                />
+                <h3>Title</h3>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut
+                  incidunt temporibus nulla adipisci quo cumque, amet fuga. At
+                  quidem, optio illum, debitis veritatis ut vitae tempore
+                  aspernatur accusantium id amet?
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-md-3">
+              <div class="item">
+                <img
+                  src="https://picsum.photos/300/200?random=4"
+                  class="img-fluid"
+                />
+                <h3>Title</h3>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut
+                  incidunt temporibus nulla adipisci quo cumque, amet fuga. At
+                  quidem, optio illum, debitis veritatis ut vitae tempore
+                  aspernatur accusantium id amet?
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-3">
+              <div class="item">
+                <img
+                  src="https://picsum.photos/300/200?random=11"
+                  class="img-fluid"
+                />
+                <h3>Title</h3>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut
+                  incidunt temporibus nulla adipisci quo cumque, amet fuga. At
+                  quidem, optio illum, debitis veritatis ut vitae tempore
+                  aspernatur accusantium id amet?
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-md-3">
+              <div class="item">
+                <img
+                  src="https://picsum.photos/300/200?random=12"
+                  class="img-fluid"
+                />
+                <h3>Title</h3>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut
+                  incidunt temporibus nulla adipisci quo cumque, amet fuga. At
+                  quidem, optio illum, debitis veritatis ut vitae tempore
+                  aspernatur accusantium id amet?
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-md-3">
+              <div class="item">
+                <img
+                  src="https://picsum.photos/300/200?random=13"
+                  class="img-fluid"
+                />
+                <h3>Title</h3>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut
+                  incidunt temporibus nulla adipisci quo cumque, amet fuga. At
+                  quidem, optio illum, debitis veritatis ut vitae tempore
+                  aspernatur accusantium id amet?
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-md-3">
+              <div class="item">
+                <img
+                  src="https://picsum.photos/300/200?random=14"
+                  class="img-fluid"
+                />
+                <h3>Title</h3>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut
+                  incidunt temporibus nulla adipisci quo cumque, amet fuga. At
+                  quidem, optio illum, debitis veritatis ut vitae tempore
+                  aspernatur accusantium id amet?
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="page">
+            <nav aria-label="Page navigation example">
+              <ul class="pagination justify-content-center">
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                  </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!--下方換頁列-->
+        </div>
+        <!--Title內文-->
+      </div>
+    </div>
+    <div class="container-fluid main-footer text-center">
+      &copy; copyright by Naoki
+    </div>
+
+    <div class="modal" id="naoki-block" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">登入</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>Modal body text goes here.</p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
